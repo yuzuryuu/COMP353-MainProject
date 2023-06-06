@@ -1,0 +1,33 @@
+<?php
+
+$hostname = 'lac353.encs.concordia.ca';
+$username = 'lac353_4';
+$password = 'Ssist353';
+
+$conn = new mysqli_connect($lac353.encs.concordia.ca, $lac353_4, $Ssist353);
+
+if ($conn->connect_error){
+  die("Connection Failed: " . $conn->connect_error);
+}
+
+echo "Connected Successfully";
+?>
+
+<html>
+<body>
+
+<h2>COMP353 Main Project</h2>
+
+<form action="/action_page.php">
+  <label for="fname">Query:</label><br>
+  <input type="text" id="query"><br>
+  <input type="submit" value="Submit">
+</form> 
+
+<p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p>
+
+</body>
+</html>
+
+
+
